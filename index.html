@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenovo</title>
+    <link rel="stylesheet" href="input.css">
+    <a href="https://www.flaticon.com/free-icons/location" title="location icons">Location icons created by Freepik -
+        Flaticon</a>
+</head>
+
+<body>
+    <!-- navbar -->
+
+    <div class="lenovoNavbar bg-gray-500 flex justify-between space-x-1">
+        <!-- medium break point hamburger div block -->
+        <div class="hamburger space-y-1 mt-2 hidden md:block md:order-1">
+            <div class="bg-black h-1 w-6 ml-2"></div>
+            <div class="bg-black h-1 w-6 ml-2"></div>
+            <div class="bg-black h-1 w-6 ml-2"></div>
+            <div class="text-[0.60rem]">EXPLORE</div>
+        </div>
+        <!-- lenovo logo -->
+        <div class="left md:order-2">
+            <div class="lenovoLogo bg-red-500 text-3xl font-bold text-white">Lenovo</div>
+        </div>
+        <!-- medium break points div block -->
+        <div class="searchBox hidden md:block md:order-3 items-center">
+            <div class="flex">
+                <input type="text" placeholder="WHAT ARE YOU LOOKING FOR?"
+                    class="w-64 p-2 text-xs border-2 rounded-md border-black">
+                <img src="search.png" alt="" class="h-9 w-8 p-2 rounded-md bg-blue-400">
+
+            </div>
+            <!-- <div> -->
+            <!-- <img src="search.png" alt="" class="h-9 w-8 p-2 rounded-md bg-blue-400"> -->
+            <!-- </div> -->
+        </div>
+
+        <!-- nav links -->
+        <div class="right flex items-center space-x-4 md:order-4">
+            <div>
+                <div> <img src="location.png" class="w-5 justify-center" alt=""> </div>
+                <div class="text-[0.60rem]">LOCATOR</div>
+            </div>
+
+            <div>
+                <div><img src="support.png" alt="" class="w-5"></div>
+                <div class="text-[0.60rem]">CONTACT</div>
+            </div>
+
+            <div>
+                <div> <img src="user.png" alt="" class="w-5"> </div>
+                <div class="text-[0.60rem]">ACCOUNT</div>
+            </div>
+            <div>
+                <div> <img src="shopping-cart.png" alt="" class="w-5"> </div>
+                <div class="text-[0.60rem]">CART</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- below nav elements -->
+    <div class="NavElements flex ml-2 mr-1 bg-gray-400 md:hidden">
+        <div class="hamburger space-y-1 mt-2">
+            <div class="bg-black h-1 w-6 ml-2"></div>
+            <div class="bg-black h-1 w-6 ml-2"></div>
+            <div class="bg-black h-1 w-6 ml-2"></div>
+            <div class="text-[0.60rem]">EXPLORE</div>
+        </div>
+        <div class="searchBox flex items-center">
+            <div>
+                <input type="text" placeholder="WHAT ARE YOU LOOKING FOR?"
+                    class="w-64 p-2 text-xs border-2 rounded-md border-black">
+            </div>
+            <div>
+                <img src="search.png" alt="" class="h-9 w-8 p-2 rounded-md bg-blue-400">
+            </div>
+        </div>
+    </div>
+    <!-- navbar completed -->
+
+
+
+    <div class="carouselContents ">
+        <!-- Mobile background -->
+        <div class="mobileContents lg:hidden">
+            <img src="lenovoBannerMobile.jpg" alt="mobileBanner" class="h-72 w-[100%]">
+            <div class="text-white -mt-48 ">
+                <div class="text-3xl bg-gray-400 text-center">
+                    Lenovo wins big at MWC 2022
+                </div>
+                <div class=" text-center bg-gray-400">
+                    We were honored to receive 38 awards this year—with two products making the “7 most impressive
+                    laptops” list
+                </div>
+                <div class="text-blue-500 text-2xl text-center">
+                    <a href="">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="w-[100%] grid
+            grid-rows-2 grid-cols-2 mt-4 lg:hidden ">
+            <div class="relative">
+                <img class="w-full" src="gridImage1.png" alt="">
+                <div class="absolute top-[80%] left-[30%] text-white">PCs & Tablets</div>
+            </div>
+            <div class="relative">
+                <img class="w-full" src="gridImage2.png" alt="">
+                <div class="absolute top-[80%] left-[30%] text-white ">Phones</div>
+            </div>
+            <div class="relative">
+                <img class="w-full" src="gridImage3.png" alt="">
+                <div class="absolute top-[80%] left-[30%] text-white">Smart Devices</div>
+            </div>
+            <div class="relative">
+                <img class="w-full" src="gridImage4.png" alt="">
+                <div class="absolute top-[80%] left-[30%] text-white">Servers & Storage</div>
+            </div>
+        </div>
+
+
+        <!-- large screen laptop , monitors banner image design -->
+        <div class="laptopContents hidden lg:block">
+            <div class="relative">
+                <img src="lenovoBanner.jpg" alt="desktopBanner" class="absolute h-screen mix-blend-overlay">
+            </div>
+            <div class="gridElements grid grid-rows-1 grid-cols-2 ">
+                <div class="mainElement1 textElements w-[50%] space-x-5 space-y-5 mt-[20%]">
+                    <div class="ml-5"><img src="logoWaterMark.png" alt=""></div>
+                    <div class="text-white text-5xl">Lenovo wins big at MWC 2022</div>
+                    <div class="text-white text-xl">We were honored to receive 38 awards this year—with two products
+                        making the “7 most impressive laptops” list</div>
+                    <button class="text-white bg-blue-400 rounded-md p-1">LEARN MORE</button>
+                </div>
+                <div class="mainElement2 fourGridImages grid grid-cols-2 grid-rows-2  ">
+                    <div class="gridImage1 relative border-2 border-white  ">
+                        <img class=" h-[100%] w-[100%] " src="gridImage1.png" alt="">
+                        <div class=" text-white text-3xl absolute top-[70%] left-[15%]">PC & Tablets +</div>
+                    </div>
+                    <div class="gridImage2  relative border-2 border-white">
+                        <img class="w-[100%]" src="gridImage2.png" alt="">
+                        <div class=" text-white text-3xl absolute top-[70%] left-[15%]">Phones +</div>
+                    </div>
+                    <div class="gridImage3 relative border-2 border-white">
+                        <img class="h-[97%] w-[100%]" src="gridImage3.png" alt="">
+                        <div class=" text-white text-3xl absolute top-[20%] left-[15%]">Smart Devices +</div>
+                    </div>
+                    <div class="gridImage4 relative border-2 border-white">
+                        <img class="h-[97%] w-[100%] " src="gridImage4.png" alt="">
+                        <div class=" text-white text-3xl absolute top-[20%] left-[15%]">Servers & Storage +</div>         
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
