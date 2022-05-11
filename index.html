@@ -6,28 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lenovo</title>
-    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="/input.css">
     <a href="https://www.flaticon.com/free-icons/location" title="location icons">Location icons created by Freepik -
         Flaticon</a>
 </head>
 
 <body>
-    <!-- navbar -->
-
+    <!-- start of navbar -->
     <div class="lenovoNavbar bg-gray-500 flex justify-between space-x-1">
         <!-- medium break point hamburger div block -->
-        <div class="hamburger space-y-1 mt-2 hidden md:block md:order-1">
+        <div class="hamburger space-y-1 mt-2 hidden md:block lg:hidden md:order-1">
             <div class="bg-black h-1 w-6 ml-2"></div>
             <div class="bg-black h-1 w-6 ml-2"></div>
             <div class="bg-black h-1 w-6 ml-2"></div>
             <div class="text-[0.60rem]">EXPLORE</div>
         </div>
         <!-- lenovo logo -->
-        <div class="left md:order-2">
+        <div class="left md:order-2 lg:hidden">
             <div class="lenovoLogo bg-red-500 text-3xl font-bold text-white">Lenovo</div>
         </div>
         <!-- medium break points div block -->
-        <div class="searchBox hidden md:block md:order-3 items-center">
+        <div class="searchBox hidden md:block md:order-3 lg:hidden items-center">
             <div class="flex">
                 <input type="text" placeholder="WHAT ARE YOU LOOKING FOR?"
                     class="w-64 p-2 text-xs border-2 rounded-md border-black">
@@ -40,7 +39,7 @@
         </div>
 
         <!-- nav links -->
-        <div class="right flex items-center space-x-4 md:order-4">
+        <div class="right flex items-center space-x-4 md:order-4 lg:hidden">
             <div>
                 <div> <img src="location.png" class="w-5 justify-center" alt=""> </div>
                 <div class="text-[0.60rem]">LOCATOR</div>
@@ -83,8 +82,50 @@
     </div>
     <!-- navbar completed -->
 
+    <!-- start of creating navbar links for LARGE screen -->
+    <div class="largeScreenNav hidden lg:flex justify-between">
+        <div class="left">
+            <div class="lenovoLogo bg-red-500 text-3xl font-bold text-white">Lenovo</div>
+        </div>
+        <div class="lg:order-2 flex bg-red-500">
+            <div>Locator</div>
+            <img class="w-5 h-5 ml-1" src="location.png" alt="locationImage">
+
+            <div class="ml-3">Contact</div>
+            <img class="w-5 h-5 ml-1" src="support.png" alt="supportImage">
+
+            <div class="ml-3">Account</div>
+            <img class="w-5 h-5 ml-1" src="user.png" alt="">
+
+            <div class="ml-3">Cart</div>
+            <img class="w-5 h-5 ml-1" src="search.png" alt="">
+        </div>
+    </div>
+    <div class="navigationLinks space-x-2 text-sm font-bold my-2 hidden lg:flex justify-between">
+
+        <div class="cursor-pointer hover:text-blue-600">PC & TABLETS</div>
+        <div class="cursor-pointer hover:text-blue-600">PHONES</div>
+        <div class="cursor-pointer hover:text-blue-600">SERVERS & STORAGE</div>
+        <div class="cursor-pointer hover:text-blue-600">SMART DEVICES</div>
+        <div class="cursor-pointer hover:text-blue-600">SERVICES & SOLUTIONS</div>
+        <div class="cursor-pointer hover:text-blue-600">ABOUT LENOVO</div>
+
+        <div class="searchBox rightNavLinks items-center">
+            <div class="flex mr-2">
+                <input type="text" placeholder="WHAT ARE YOU LOOKING FOR?"
+                    class="w-64 p-2 text-xs border-2 rounded-md border-black">
+                <img src="search.png" alt="" class="h-9 w-8 p-2 rounded-md bg-blue-400">
+            </div>
+        </div>
+    </div>
+    <!-- **********End of creating navbar links for LARGE screen********** -->
 
 
+
+
+
+    <!-- ******************************* -->
+    <!-- start of carousel contents -->
     <div class="carouselContents ">
         <!-- Mobile background -->
         <div class="mobileContents lg:hidden">
@@ -122,7 +163,6 @@
             </div>
         </div>
 
-
         <!-- large screen laptop , monitors banner image design -->
         <div class="laptopContents hidden lg:block">
             <div class="relative">
@@ -134,7 +174,7 @@
                     <div class="text-white text-5xl">Lenovo wins big at MWC 2022</div>
                     <div class="text-white text-xl">We were honored to receive 38 awards this year—with two products
                         making the “7 most impressive laptops” list</div>
-                    <button class="text-white bg-blue-400 rounded-md p-1">LEARN MORE</button>
+                    <button class="text-white bg-blue-400 rounded-md p-1 ">LEARN MORE</button>
                 </div>
                 <div class="mainElement2 fourGridImages grid grid-cols-2 grid-rows-2 cursor-pointer ">
                     <div class="gridImage1 relative border-2 border-white bg-black opacity-50 hover:opacity-100">
@@ -151,13 +191,51 @@
                     </div>
                     <div class="gridImage4 relative border-2 border-white bg-black opacity-50 hover:opacity-100">
                         <img class="h-[100%] w-[100%] lg:invisible " src="gridImage4.png" alt="">
-                        <div class=" text-white text-3xl absolute top-[20%] left-[15%]">Servers & Storage +</div>         
+                        <div class=" text-white text-3xl absolute top-[20%] left-[15%]">Servers & Storage +</div>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </div>
+    <!-- end of carousel contents -->
+    <!-- ********************************* -->
+
+    <!-- start of footer contents -->
+    <div class="footerContents bg-gray-400">
+        <div class="bg-black text-white text-center py-1">
+            Feedback
+        </div>
+        <div class="mt-5 space-y-5">
+            <div class="font-semibold text-gray-500 text-sm">STAY CONNECTED</div>
+            <input class="text-sm p-1 w-[78%] border-2 border-gray-500" type="text"
+                placeholder="Enter your email address">
+            <button class="p-1 bg-black text-white font-bold">SIGN UP</button>
+        </div>
+        <div class="flex space-x-2 mt-5  ">
+            <div class="w-10 h-10"><img class="" src="icons\facebook.png" alt=""></div>
+            <div class="w-10 h-10"><img src="icons\twitter-sign.png" alt=""></div>
+            <div class="w-10 h-10"><img src="icons\instagram.png" alt=""></div>
+            <div class="w-10 h-10"><img src="icons\youtube.png" alt=""></div>
+            <div class="w-10 h-10"><img src="icons\flickr-website-logo-silhouette.png" alt=""></div>
+            <div class="w-10 h-10"><img src="icons\group.png" alt=""></div>
+        </div>
+
+        <div class="text-gray-800 mt-5 font-semibold">COUNTRY SELECTOR</div>
+        <select class="mt-4 w-[100%] bg-gray-500 " name="country" id="">
+            <option value="India">India</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Algeria">Algeria</option>
+            <option value="Australia">Australia</option>
+            <option value="Sri lanka">Sri lanka</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Bhutan">Bhutan</option>
+            <option value="Myanmar">Myanmar</option>
+            <option value="Russia">Russia</option>
+        </select>
+    </div>
+
+
 </body>
+
 </html>
